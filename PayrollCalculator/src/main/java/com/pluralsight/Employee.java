@@ -19,7 +19,7 @@ public class Employee {
 
     //getters and setters
     public double getGrossPay() {
-        return hoursWorked * payRate;
+        return this.getHoursWorked() * this.getPayRate();
     }
 
     public String getName() {
