@@ -41,7 +41,7 @@ public class Quotes {
                 //eats the next line
                 quoteScanner.nextLine();
 
-                //catches exceptions and displays a mes
+                //catches exceptions and displays a message
             } catch (Exception e) {
                 System.out.println("Sorry, enter a valid number!");
             }
