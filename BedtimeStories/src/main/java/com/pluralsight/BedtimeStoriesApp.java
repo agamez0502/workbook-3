@@ -41,7 +41,7 @@ public class BedtimeStoriesApp {
             fileScanner.close();
             fis.close();
 
-          //catches exceptions and gives them a message
+            //catches exceptions and gives them a message
         } catch (Exception e) {
             System.out.println("That file doesn't exist");
         }

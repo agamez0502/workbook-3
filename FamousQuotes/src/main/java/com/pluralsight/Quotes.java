@@ -9,7 +9,7 @@ public class Quotes {
         //fire up the scanner to allow user input
         Scanner quoteScanner = new Scanner(System.in);
 
-        //quotes
+        //array of quotes
         String[] quotes = {"Time is money",
                 "Where there is love there is life",
                 "The only thing we have to fear is fear itself",
@@ -21,20 +21,27 @@ public class Quotes {
                 "If you can dream it you can achieve it",
                 "Everything happens for a reason"};
 
+        //while loop to keep the app running
         boolean appRunning = true;
 
         while (appRunning) {
 
+            //try catch statement
             try {
+
                 //ask user to pick a number
+                System.out.println("--------------------------------------------------");
                 System.out.println("Pick a number between 1-10 for the quote you want?");
                 int numQuote = quoteScanner.nextInt();
 
+                //prints out quote slowly
                 System.out.println(quotes[numQuote - 1]);
                 Thread.sleep(1000);
 
+                //eats the next line
                 quoteScanner.nextLine();
 
+                //catches exceptions and displays a mes
             } catch (Exception e) {
                 System.out.println("Sorry, enter a valid number!");
             }
