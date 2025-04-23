@@ -10,28 +10,16 @@ public class PayrollCalculatorApp {
 
     //fire up the scanner for user input
     static Scanner csvScanner = new Scanner(System.in);
+
     public static void main(String[] args) {
 
         //try catch statement
         try {
 
             //file name; where it is located
-            String fileName = "src/main/resources/employees.csv";
-            String outputFile = "payroll-sept-2023.csv";
-
-            //create file input stream that brings file into our code
-            FileReader csvFile = new FileReader(fileName);
-            BufferedReader csvBufferedReader = new BufferedReader(csvFile);
-
-            //eats the header line in the file aka the first line
-            //you can also use csv.BufferReader.readLine(); to eat the first line
-            String header = csvBufferedReader.readLine();
-
-            //create a FileWriter
-            FileWriter fileWriter = new FileWriter("src/main/resources/" + outputFile);
-
-            //create a BufferedWriter
-            BufferedWriter bufWriter = new BufferedWriter(fileWriter);
+//            String fileName = "src/main/resources/employees.csv"; // hardcoded employee file
+//            String outputFile = "payroll-sept-2023.csv"; //hardcoded payroll file
+//            String outputFile2 = "payroll-sept-2023.json"; //bonus? will work on later
 
             //ask user to enter employees file to display it
             System.out.println("Enter the name of the file employees file to process: ");
@@ -44,6 +32,20 @@ public class PayrollCalculatorApp {
             //description of file
             System.out.println("\nHere is the current employee information:");
             System.out.println("---------------------------------------------------------");
+
+            //create file input stream that brings file into our code
+            FileReader csvFile = new FileReader("src/main/resources/" + employeeFile);
+            BufferedReader csvBufferedReader = new BufferedReader(csvFile);
+
+            //eats the header line in the file aka the first line
+            //you can also use csv.BufferReader.readLine(); to eat the first line
+            String header = csvBufferedReader.readLine();
+
+            //create a FileWriter
+            FileWriter fileWriter = new FileWriter("src/main/resources/" + payrollFile);
+
+            //create a BufferedWriter
+            BufferedWriter bufWriter = new BufferedWriter(fileWriter);
 
             //using buffer writer to display the header
             String header2 = "id | name | grosspay\n";
@@ -73,17 +75,16 @@ public class PayrollCalculatorApp {
 
                 String lineForOutputFile = employee.getEmployeeId() + " | " + employee.getName() + " | " + employee.getGrossPay() + "\n";
                 bufWriter.write(lineForOutputFile);
-
             }
 
             //close reader and writer
             bufWriter.close();
             csvBufferedReader.close();
 
-          //catches exceptions and displays error message
-          //e.getMessage() to display error to me
+            //catches exceptions and displays error message
+            //e.getMessage() to display error to me
         } catch (Exception e) {
-            System.out.println("Error, something went wrong!");
+            System.out.println("Error, something went wrong! " + e.getMessage());
         }
     }
 }
