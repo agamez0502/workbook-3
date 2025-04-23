@@ -1,10 +1,15 @@
 package com.pluralsight;
 
 import java.io.BufferedReader;
+import java.io.BufferedWriter;
 import java.io.FileReader;
+import java.io.FileWriter;
+import java.util.Scanner;
 
 public class PayrollCalculatorApp {
 
+    //fire up the scanner for user input
+    static Scanner csvScanner = new Scanner(System.in);
     public static void main(String[] args) {
 
         //try catch statement
@@ -12,18 +17,37 @@ public class PayrollCalculatorApp {
 
             //file name; where it is located
             String fileName = "src/main/resources/employees.csv";
+            String outputFile = "payroll-sept-2023.csv";
 
             //create file input stream that brings file into our code
             FileReader csvFile = new FileReader(fileName);
             BufferedReader csvBufferedReader = new BufferedReader(csvFile);
 
             //eats the header line in the file aka the first line
+            //you can also use csv.BufferReader.readLine(); to eat the first line
             String header = csvBufferedReader.readLine();
-            //or csv.BufferReader.readLine(); to eat the first line
+
+            //create a FileWriter
+            FileWriter fileWriter = new FileWriter("src/main/resources/" + outputFile);
+
+            //create a BufferedWriter
+            BufferedWriter bufWriter = new BufferedWriter(fileWriter);
+
+            //ask user to enter employees file to display it
+            System.out.println("Enter the name of the file employees file to process: ");
+            String employeeFile = csvScanner.nextLine().trim();
+
+            //ask user to create a new payroll file
+            System.out.println("Enter the name of the payroll file to create: ");
+            String payrollFile = csvScanner.nextLine().trim();
 
             //description of file
-            System.out.println("Here is the current employee information:");
+            System.out.println("\nHere is the current employee information:");
             System.out.println("---------------------------------------------------------");
+
+            //using buffer writer to display the header
+            String header2 = "id | name | grosspay\n";
+            bufWriter.write(header2);
 
             //looping with the buffered reader
             String theLine;
@@ -46,9 +70,14 @@ public class PayrollCalculatorApp {
                         employee.getEmployeeId(),
                         employee.getName(),
                         employee.getGrossPay());
+
+                String lineForOutputFile = employee.getEmployeeId() + " | " + employee.getName() + " | " + employee.getGrossPay() + "\n";
+                bufWriter.write(lineForOutputFile);
+
             }
 
-            //close reader
+            //close reader and writer
+            bufWriter.close();
             csvBufferedReader.close();
 
           //catches exceptions and displays error message

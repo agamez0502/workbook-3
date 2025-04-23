@@ -17,6 +17,7 @@ public class Employee {
         this.payRate = payRate;
     }
 
+
     //getters and setters
     public double getGrossPay() {
         return this.getHoursWorked() * this.getPayRate();
