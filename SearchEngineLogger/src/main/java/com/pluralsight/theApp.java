@@ -6,6 +6,7 @@ import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 import java.util.Scanner;
 
+//theApp needs to be capitalized because it is a class
 public class theApp {
 
     //create pattern/formatter we need for the time stamp format
