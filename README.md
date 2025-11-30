@@ -2,101 +2,101 @@
 **Student Workbook – Version 2.x**
 
 Workbook 3 combines three major areas of early-career development:  
-✔ Agile project management  
-✔ GitHub collaboration & repository workflows  
-✔ Mastering Java fundamentals (File I/O, Dates, Collections, Maps)
+✔ Agile project management 🌱  
+✔ GitHub collaboration & repository workflows 🌿  
+✔ Mastering Java fundamentals (File I/O, Dates, Collections, Maps) ☕📁✨
 
 ---
 
 ## 📚 Table of Contents
 
-### 🔹 Module 1: Agile Software Development
+### 🔹 Module 1: Agile Software Development 🌱💡
 - Agile overview  
 - Waterfall vs Agile  
-- Agile Manifesto & 12 Principles  
-- Scrum framework  
-- Sprints & Daily Standups  
-- Retrospectives  
-- Research assignments  
+- Agile Manifesto & 12 Principles 📜  
+- Scrum framework 🌀  
+- Sprints & Daily Standups ⏱️  
+- Retrospectives 🔄  
+- Research assignments 📚  
 
 ---
 
-### 🔹 Module 2: User Stories
+### 🔹 Module 2: User Stories 📝✨
 - What a user story is  
 - User story structure: *As a … I want … so that …*  
-- Converting requirements into stories  
-- Prioritizing stories  
-- Exercises for writing effective stories  
+- Converting requirements into stories 🔍  
+- Prioritizing stories ⭐  
+- Exercises for writing effective stories ✍️  
 
 ---
 
-### 🔹 Module 3: Agile Project Management Tools
+### 🔹 Module 3: Agile Project Management Tools 📋⚙️
 - GitHub Projects  
-- Creating a project board  
-- Renaming boards  
-- Adding & rearranging columns  
-- Adding user stories / tasks  
-- Adding acceptance criteria  
-- Updating task details  
+- Creating a project board 📂  
+- Renaming boards ✏️  
+- Adding & rearranging columns 🔧  
+- Adding user stories / tasks 🗂️  
+- Adding acceptance criteria 📌  
+- Updating task details 🔄  
 
 ---
 
-### 🔹 Module 4: GitHub & Repository Management
+### 🔹 Module 4: GitHub & Repository Management 🌿💻
 - Migrating local repos to GitHub  
 - Creating EMPTY remote repos  
-- Adding remotes  
-- Pushing & pulling  
-- Working with branches  
-- README.md structure & Markdown basics  
-- Best practices for documentation  
+- Adding remotes 🔗  
+- Pushing & pulling ⬆️⬇️  
+- Working with branches 🌱  
+- README.md structure & Markdown basics 📝  
+- Best practices for documentation 📖  
 
 ---
 
-### 🔹 Module 5: File I/O — Reading
-- Handling exceptions  
-- try/catch blocks  
-- Scanner for reading files  
-- BufferedReader  
-- Reading line-by-line  
-- Exercises using external data files  
+### 🔹 Module 5: File I/O — Reading 📁📖
+- Handling exceptions ⚠️  
+- try/catch blocks 🧩  
+- Scanner for reading files 🔍  
+- BufferedReader 📘  
+- Reading line-by-line 📄  
+- Exercises using external data files ✍️  
 
 ---
 
-### 🔹 Module 6: File I/O — Writing
-- FileWriter  
-- BufferedWriter  
-- Writing CSV & JSON output  
-- Logging user actions  
-- Formatting dates & times  
-- Parsing strings into dates  
-- Exercises involving writing and formatting data  
+### 🔹 Module 6: File I/O — Writing ✍️🗂️
+- FileWriter 🖊️  
+- BufferedWriter 📄  
+- Writing CSV & JSON output 📊  
+- Logging user actions 📝  
+- Formatting dates & times ⏰  
+- Parsing strings into dates 📅  
+- Exercises involving writing and formatting data ✨  
 
 ---
 
-### 🔹 Module 7: Collections — Lists
+### 🔹 Module 7: Collections — Lists 📦🌿
 - Collections framework overview  
-- ArrayList  
-- Adding, accessing, updating, and removing elements  
-- Sorting lists  
-- Managing data models (e.g., Product class)  
-- Exercises building inventory applications  
+- ArrayList 📋  
+- Adding, accessing, updating, and removing elements 🔄  
+- Sorting lists 📊  
+- Managing data models (e.g., Product class) 🧱  
+- Exercises building inventory applications 🛒  
 
 ---
 
-### 🔹 Module 8: Collections — Maps
+### 🔹 Module 8: Collections — Maps 🔑🗺️
 - HashMap key/value storage  
-- Adding, looking up, removing items  
-- Iterating through key sets & values  
-- Using Maps for fast lookup  
-- Exercises converting inventory apps to Maps  
+- Adding, looking up, removing items 🔍  
+- Iterating through key sets & values 🔄  
+- Using Maps for fast lookup ⚡  
+- Exercises converting inventory apps to Maps 🔁  
 
 ---
 
-### 🔹 Module 9: CodeWars
-- Cat/Dog Years  
-- Roman Numerals  
-- Total Points  
-- Practice using collections, conditionals, and file I/O in Java  
+### 🔹 Module 9: CodeWars ⚔️💡
+- Cat/Dog Years 🐱🐶  
+- Roman Numerals 🏛️  
+- Total Points 🎯  
+- Practice using collections, conditionals, and file I/O in Java ✨  
 
 ---
 
@@ -115,4 +115,4 @@ Workbook 3 combines three major areas of early-career development:
 ### ✨ Final Slay Note  
 From Agile teamwork to GitHub collaboration to real Java applications —  
 Workbook 3 is where everything starts to feel *real*.  
-Organize the work, manage the repo, build the program — and do it all with style. 💅🚀
+Organize the work, manage the repo, build the program — and do it all with style. 💅🚀  
