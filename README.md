@@ -115,4 +115,4 @@ Workbook 3 combines three major areas of early-career development:
 ### ✨ Final Slay Note  
 From Agile teamwork to GitHub collaboration to real Java applications —  
 Workbook 3 is where everything starts to feel *real*.  
-Organize the work, manage the repo, build the program — and do it all with style. 💅🚀  
+Organize the work, manage the repo, and build the program. 💅🚀  
