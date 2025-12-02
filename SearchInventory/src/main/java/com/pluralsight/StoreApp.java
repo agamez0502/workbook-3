@@ -1,11 +1,13 @@
 package com.pluralsight;
 
+import javax.xml.namespace.QName;
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
 import java.io.FileReader;
 import java.io.FileWriter;
 import java.util.ArrayList;
 import java.util.Collections;
+import java.util.Comparator;
 import java.util.Scanner;
 
 public class StoreApp {
@@ -21,8 +23,8 @@ public class StoreApp {
 
         //calling the getInventory method
         ArrayList<Product> inventory = getInventory();
-        System.out.println("--------------------------------------------------");
-        System.out.println("We carry the following inventory:");
+//        System.out.println("--------------------------------------------------");
+//        System.out.println("We carry the following inventory:");
 
         //for loop
         for (int i = 0; i < inventory.size(); i++) {
@@ -37,12 +39,12 @@ public class StoreApp {
         Scanner myScanner = new Scanner(System.in);
 
         ArrayList<Product> inventory = new ArrayList<Product>();
-        // this method loads product objects into inventory // and its details are not shown
-        inventory.add(new Product(1, "Chicken    ", 20.99f));
-        inventory.add(new Product(2, "Steak      ", 30.99f));
-        inventory.add(new Product(3, "Turkey     ", 15.99f));
-        inventory.add(new Product(4, "Ground Beef", 20.99f));
-        inventory.add(new Product(5, "Beef Liver ", 10.99f));
+//        // this method loads product objects into inventory // and its details are not shown
+//        inventory.add(new Product(1, "Chicken    ", 20.99f));
+//        inventory.add(new Product(2, "Steak      ", 30.99f));
+//        inventory.add(new Product(3, "Turkey     ", 15.99f));
+//        inventory.add(new Product(4, "Ground Beef", 20.99f));
+//        inventory.add(new Product(5, "Beef Liver ", 10.99f));
 
         try {
             //ask user to enter employees file to display it
@@ -92,7 +94,7 @@ public class StoreApp {
         } catch (Exception e) {
             System.out.println("Error" + e.getMessage());
         }
-//        Collections.sort(ArrayList<Product>);
+//        Collections.sort(inventory, Comparator.comparing(Product::getName));
         return inventory;
     }
 
